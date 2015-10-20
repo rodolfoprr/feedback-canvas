@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Feedback Canvas</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Feedback Canvas</h1>
+					<p>
+						<small><a href="http://twitter.com/rodolfoprr">@rodolfoprr</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>O que é</h2>
+					<p>Ferramenta criada para ajudar o processo de feedback de uma equipe para um dos seus membros, servindo de apoio para direcionar e organizar as informações de feedback.</p>
+				</section>
+				
+				<section>
+					<h2>Modelos</h2>
+					
+					<p><a href="http://gestao30.matheus.eti.br/feedback-ao-inves-de-avaliacao-de-desempenho/">Original - Matheus Haddad</a></p>
+					<p><a href="http://blog.lambda3.com.br/2013/11/melhorando-da-cultura-de-feedback-da-sua-empresa/">Lambda3</a></p>
+					<p><a href="#">Princi Web</a></p>
+				</section>
+				
+				<section>
+					<h2>Como funciona - Quadro</h2>
+					<p class="fragment"><b>1. Definição de carreira:</b><br />Nesta área é a carreira na qual o pessoa a receber feedback será avaliada.</p>
+					<p class="fragment"><b>2. Definição de skills:</b><br />Definir quais são as principais atividades relacionadas ao desenvolvimento no contexto que vivem. Mesclar entre hard skills (técnicas) e soft skills (interpessoal).</p>
+				</section>
+				
+				<section>
+					<h2>Como funciona - Quadro</h2>
+					<p class="fragment"><b>3. Escala:</b><br />Escala de proficiência em uma determinada skill. <a href="https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Modelo Dreyfus</a> de aquisição de conhecimento.</p>
+					<p class="fragment"><b>4. Celebração:</b><br />Relembrar fatos que trouxeram trazem grande benefício para seus pares. É importante que a celebração esteja pautada em uma fato.</p>
+				</section>
+				
+				<section>
+					<h2>Como funciona - Quadro</h2>
+					<p class="fragment"><b>5. Stop / Start:</b><br />Feedback construtivo sobre o que o indivíduo deve “Parar de fazer” e em contra partida, “começar a fazer” para melhorar na visão de seus pares. Um exemplo seria: Fulano deve “Parar de permanecer em silêncio nas reuniões e começar a participar mais”.</p>
+				</section>
+				
+				<section>
+					"Quanto aos itens 5 e 6, existe uma diferença clara do modelo apresentado pelo Matheus: Tiramos a noção de Pontos Positivos e Pontos Negativos. Por quê? Queríamos ancorar as reuniões para que os participantes não pensassem no que as pessoas são, mas como elas agem. Assim, é muito mais fácil passar um feedback construtivo, evitando que o feedbackee entre numa posição defensiva."
+				</section>
+				
+				<section>
+					<h2>Como funciona - O processo</h2>
+					<ol>
+						<li>Pré-Game</li>
+    				<li>Introdução</li>
+    				<li>Pontuação de Skills</li>
+    				<li>Data Gathering</li>
+    				<li>Generate Insights</li>
+    				<li>Encerramento</li>
+					</ol>
+					
+					<p><a href="http://pt.slideshare.net/raphaelmolesim/manual-do-feedback-canvas">http://pt.slideshare.net/raphaelmolesim/manual-do-feedback-canvas</a></p>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>Valeu!</h1>
+					<p>
+						- <a href="http://blog.lambda3.com.br/2013/11/melhorando-da-cultura-de-feedback-da-sua-empresa/">Melhorando da cultura de feedback da sua empresa</a> <br>
+						- <a href="http://gestao30.matheus.eti.br/feedback-ao-inves-de-avaliacao-de-desempenho/">Feedback ao invés de avaliação de desempenho</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
